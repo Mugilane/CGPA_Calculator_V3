@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CGPACalculator"
+        tools:targetApi="33">
+        <activity android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".Sample" />
+        <activity android:name=".MechSem8List" />
+        <activity android:name=".MechSem7List" />
+        <activity android:name=".MechSem6List" />
+        <activity android:name=".MechSem5List" />
+        <activity android:name=".EeeSem8List" />
+        <activity android:name=".EeeSem7List" />
+        <activity android:name=".EeeSem6List" />
+        <activity android:name=".EeeSem5List" />
+        <activity android:name=".EceSem8List" />
+        <activity android:name=".EceSem6List" />
+        <activity android:name=".EceSem5List" />
+        <activity android:name=".EceSem7List" />
+        <activity android:name=".SetupProfile" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".About" />
+        <activity android:name=".MechSem4List" />
+        <activity android:name=".MechSem3List" />
+        <activity android:name=".EeeSem4List" />
+        <activity android:name=".EeeSem3List" />
+        <activity android:name=".EceSem3List" />
+        <activity android:name=".EceSem4List" />
+        <activity android:name=".EceSem2List" />
+        <activity android:name=".EceSem1List" />
+        <activity android:name=".CivilSemList" />
+        <activity android:name=".CivilSem3List" />
+        <activity android:name=".CivilSem4List" />
+        <activity android:name=".CivilSem5List" />
+        <activity android:name=".CivilSem6List" />
+        <activity android:name=".CivilSem7List" />
+        <activity android:name=".CivilSem8List" />
+        <activity android:name=".MechSemList" />
+        <activity android:name=".EeeSemList" />
+        <activity android:name=".EceSemList" />
+        <activity android:name=".ItSem8List" />
+        <activity android:name=".ItSem7List" />
+        <activity android:name=".ItSem6List" />
+        <activity android:name=".ItSem5List" />
+        <activity android:name=".ItSem4List" />
+        <activity android:name=".ItSem3List" />
+        <activity android:name=".ItSemList" />
+        <activity android:name=".CseSem8List" />
+        <activity android:name=".CseSem7List" />
+        <activity android:name=".CseSem6List" />
+        <activity android:name=".CseSem5List" />
+        <activity android:name=".CseSem4List" />
+        <activity android:name=".CseSem3List" />
+        <activity android:name=".CseSem2List" />
+        <activity android:name=".CseSem1List" />
+        <activity android:name=".CseSemList" />
+        <activity android:name=".MainActivity" />
+    </application>
+</manifest>
