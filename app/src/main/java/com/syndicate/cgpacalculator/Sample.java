@@ -43,7 +43,7 @@ public class Sample extends AppCompatActivity {
 
     }
     public void read() {
-        String[] sub = {"M I","Physics","chemistry","BEEE","TD","CP","CP  Lab","EG","BEE  Lab"};
+        String[] sub = {"M I","Physics","Chemistry","BEEE","TD","CP","CP  Lab","EG","BEE  Lab","GPA"};
         try {
             FileInputStream fileInputStream = openFileInput("sem1Gpa.txt");
             InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
@@ -63,9 +63,17 @@ public class Sample extends AppCompatActivity {
             String  temp  ="";
             int j = 0;
             char[] ch=a.toCharArray();
-            for(int  i=0;i<9;i++)
+            for(int  i=0;i<10;i++)
             {
-                temp = temp + "\n"+sub[j]+" : "+ch[i];
+                if(i==9){
+                    String gp="";
+                    for(int x=i;x<ch.length;x++){
+                        gp +=ch[x];
+                    }
+                    temp = temp + "\n"+sub[j]+" : "+gp;
+                }else{
+                    temp = temp + "\n"+sub[j]+" : "+ch[i];
+                }
                 j++;
             }
 //            for(char i: ch){
@@ -113,7 +121,7 @@ public class Sample extends AppCompatActivity {
         }
 
         myPdfDocument.close();
-        Toast.makeText(Sample.this,"printed ",Toast.LENGTH_SHORT).show();
+//        Toast.makeText(Sample.this,"printed ",Toast.LENGTH_SHORT).show();
 
 
     }

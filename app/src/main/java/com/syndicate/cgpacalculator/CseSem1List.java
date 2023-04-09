@@ -423,10 +423,9 @@ public class CseSem1List extends AppCompatActivity {
         export.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(CseSem1List.this,"Under Developement",Toast.LENGTH_SHORT).show();
-//                writeGpa();
-//                Intent intent = new Intent(CseSem1List.this,Sample.class);
-//                startActivity(intent);
+//                Toast.makeText(CseSem1List.this,"Under Developement",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(CseSem1List.this,Sample.class);
+                startActivity(intent);
             }
         });
 
@@ -514,6 +513,8 @@ public class CseSem1List extends AppCompatActivity {
             cpyIcon.setVisibility(View.VISIBLE);
             copy.setVisibility(View.VISIBLE);
             resultText.setVisibility(View.VISIBLE);
+            writeGpa();
+            export.setVisibility(View.VISIBLE);
             }
         });
 
@@ -918,7 +919,7 @@ public class CseSem1List extends AppCompatActivity {
     }
 
     public void writeGpa(){
-        String textToSave = t1.getText().toString().toUpperCase()+" "+ t2.getText().toString().toUpperCase()+" "+t3.getText().toString().toUpperCase()+" "+t4.getText().toString().toUpperCase()+" "+t5.getText().toString().toUpperCase()+" "+t6.getText().toString().toUpperCase()+" "+t7.getText().toString().toUpperCase()+" "+t8.getText().toString().toUpperCase()+" "+t9.getText().toString().toUpperCase() ;
+        String textToSave = t1.getText().toString().toUpperCase()+" "+ t2.getText().toString().toUpperCase()+" "+t3.getText().toString().toUpperCase()+" "+t4.getText().toString().toUpperCase()+" "+t5.getText().toString().toUpperCase()+" "+t6.getText().toString().toUpperCase()+" "+t7.getText().toString().toUpperCase()+" "+t8.getText().toString().toUpperCase()+" "+t9.getText().toString().toUpperCase()+" "+result.getText().toString() ;
 
         try{
             FileOutputStream fileOutputStream = openFileOutput("sem1Gpa.txt",MODE_PRIVATE);

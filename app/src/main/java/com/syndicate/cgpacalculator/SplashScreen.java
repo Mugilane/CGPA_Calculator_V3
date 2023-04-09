@@ -12,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SplashScreen extends AppCompatActivity {
-
     Animation top,bottom;
     ImageView image;
     TextView t1,t2,t3;
