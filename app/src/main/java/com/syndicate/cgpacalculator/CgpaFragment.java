@@ -537,7 +537,7 @@ public class CgpaFragment extends Fragment {
             while ((lines = bufferedReader.readLine()) != null) {
                 stringBuffer.append(lines + "\n");
             }
-            t1.setText(stringBuffer.toString());
+            t2.setText(stringBuffer.toString());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

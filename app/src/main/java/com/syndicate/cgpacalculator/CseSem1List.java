@@ -404,6 +404,7 @@ public class CseSem1List extends AppCompatActivity {
                             t8.setText("F");
                             cursor[0]++;
                             break;
+                            
                         case "t9":
                             t9.setText("F");
                             cursor[0]++;
