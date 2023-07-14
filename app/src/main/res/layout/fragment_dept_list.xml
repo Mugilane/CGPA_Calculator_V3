@@ -11,5 +11,5 @@
     android:horizontalSpacing="@dimen/_10sdp"
     android:stretchMode="columnWidth"
     android:gravity="center"
-    tools:context=".DeptListFragment">
+    tools:context=".fragment.DeptListFragment">
 </GridView>

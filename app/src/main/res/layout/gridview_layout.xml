@@ -21,5 +21,4 @@
         android:fontFamily="@font/spartan_bold"
         android:textSize="@dimen/_14sdp"
         />
-
 </LinearLayout>

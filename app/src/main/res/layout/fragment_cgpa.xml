@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#E0E0E2"
     android:orientation="vertical"
-    tools:context=".CgpaFragment">
+    tools:context=".fragment.CgpaFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

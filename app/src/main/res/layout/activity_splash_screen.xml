@@ -55,15 +55,28 @@
             android:gravity="center"
             />
 
-        <TextView
-            android:id="@+id/t3"
-            android:layout_width="match_parent"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TechCos Inc."
-            android:textColor="#1946EA"
-            android:fontFamily="@font/spartan_bold"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
             android:gravity="center"
-            />
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/techcos"
+                />
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TechCos Inc."
+                android:textColor="#1946EA"
+                android:fontFamily="@font/spartan_bold"
+                android:gravity="center"
+                />
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </LinearLayout>
 

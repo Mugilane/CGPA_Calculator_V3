@@ -51,14 +51,6 @@ public class Sample extends AppCompatActivity {
             StringBuffer stringBuffer = new StringBuffer();
 
             String lines= bufferedReader.readLine();
-//            while ((lines = bufferedReader.readLine()) != null) {
-//                if (lines == " ") {
-//                    arrayList.add(stringBuffer);
-//                    stringBuffer = new StringBuffer();
-//                }
-//                stringBuffer.append(lines + "\n");
-//
-//            }
             String a  = lines.trim().replaceAll(" ","");
             String  temp  ="";
             int j = 0;
@@ -76,10 +68,6 @@ public class Sample extends AppCompatActivity {
                 }
                 j++;
             }
-//            for(char i: ch){
-//                temp = temp + "\n"+sub[j]+" : "+i;
-//                j++;
-//            }
             t1.setText(temp);
         } catch (FileNotFoundException e) {
             e.printStackTrace();

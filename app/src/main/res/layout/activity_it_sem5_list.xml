@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#CFCDCD"
     android:orientation="vertical"
-    tools:context=".ItSem5List">
+    tools:context=".it.ItSem5List">
     <LinearLayout
         android:id="@+id/ll1"
         android:layout_width="match_parent"

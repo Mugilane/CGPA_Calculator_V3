@@ -8,6 +8,12 @@
     android:layout_marginTop="@dimen/_10sdp"
     tools:context=".About"
     android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        app:srcCompat="@drawable/techcos"
+        android:layout_gravity="center"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,10 +31,11 @@
         android:fontFamily="@font/spartan_bold"
         android:textSize="@dimen/_13sdp"
         />
-        <LinearLayout
-            android:layout_marginTop="@dimen/_250sdp"
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="@dimen/_30sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:orientation="vertical">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -115,5 +122,5 @@
 
 
 
-        </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 </LinearLayout>

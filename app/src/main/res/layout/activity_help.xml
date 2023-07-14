@@ -35,10 +35,26 @@
             />
 
     </LinearLayout>
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/activity_main_youtubePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:videoId="4jxZJnqYl3E"
+        app:autoPlay="true"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:textColor="@color/black"
+        android:text="Or"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
-        android:layout_marginTop="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_40sdp"
         android:orientation="horizontal"
         android:gravity="center"
         >
@@ -50,6 +66,8 @@
         android:layout_marginEnd="@dimen/_20sdp"
         android:text="@string/ytlink"
         android:fontFamily="@font/spartan_bold"
+        android:layout_gravity="clip_horizontal"
+        android:gravity="center"
         android:textSize="@dimen/_13sdp"
         />
     </LinearLayout>

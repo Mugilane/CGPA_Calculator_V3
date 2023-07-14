@@ -14,16 +14,10 @@ import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 
 import com.google.android.material.tabs.TabLayout;
+import com.syndicate.cgpacalculator.adapters.TabsAccessAdapter;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -36,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     ViewPager pager;
-    ImageView profile;
+
     TabLayout tabLayout;
     //   Button btnCSE,btnIT,btnECE,btnEEE,btnMech,btnCivil,btnCgpa;
     TabsAccessAdapter tabsAccessAdapter;
@@ -63,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         toolbar = findViewById(R.id.main_page_toolbar);
-        profile = findViewById(R.id.profile);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<small>CGPA Calculator</small>"));
 
@@ -74,13 +67,6 @@ public class MainActivity extends AppCompatActivity {
         pager.setCurrentItem(1);
         tabLayout.setupWithViewPager(pager);
 
-        profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-                startActivity(intent);
-            }
-        });
 
 //        btnCSE.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -169,6 +155,10 @@ public class MainActivity extends AppCompatActivity {
         }
         if (item.getItemId() == R.id.main_rateus_option) {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + getPackageName())));
+        }
+        if (item.getItemId() == R.id.main_profile_option) {
+            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+            startActivity(intent);
         }
         return true;
     }

@@ -7,12 +7,5 @@
     android:layout_height="wrap_content"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     >
-    <ImageView
-        android:id="@+id/profile"
-        android:layout_width="@dimen/_20sdp"
-        android:layout_height="@dimen/_20sdp"
-        android:layout_marginStart="@dimen/_150sdp"
-        android:src="@drawable/ic_account_circle_black_24dp"
-        />
 
 </androidx.appcompat.widget.Toolbar>

@@ -7,7 +7,7 @@
     android:background="#CFCDCD"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CivilSem7List">
+    tools:context=".civil.CivilSem7List">
     <LinearLayout
         android:id="@+id/ll1"
         android:layout_width="match_parent"
