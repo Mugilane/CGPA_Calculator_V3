@@ -9,9 +9,14 @@
         app:showAsAction="never"
         />
     <item
+        android:id="@+id/main_more_apps_option"
+        android:title="More Apps"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/main_about_option"
         android:title="About"
         app:showAsAction="never" />
+
     <item
         android:id="@+id/main_rateus_option"
         android:title="Rate Us"

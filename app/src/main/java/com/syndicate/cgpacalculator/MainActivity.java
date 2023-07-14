@@ -160,6 +160,9 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
             startActivity(intent);
         }
+        if (item.getItemId() == R.id.main_more_apps_option) {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/dev?id=5381883898197393897")));
+        }
         return true;
     }
 

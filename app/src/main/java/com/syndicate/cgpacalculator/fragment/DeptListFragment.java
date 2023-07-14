@@ -27,8 +27,9 @@ import com.syndicate.cgpacalculator.mech.MechSemList;
  * A simple {@link Fragment} subclass.
  */
 public class DeptListFragment extends Fragment {
-    Button btnCSE,btnIT,btnECE,btnEEE,btnMech,btnCivil;
+    Button btnCSE, btnIT, btnECE, btnEEE, btnMech, btnCivil;
     GridView gridView;
+
     public DeptListFragment() {
         // Required empty public constructor
     }
@@ -47,32 +48,31 @@ public class DeptListFragment extends Fragment {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(i==0) {
+                if (i == 0) {
                     Intent intent = new Intent(getActivity(), CseSemList.class);
                     startActivity(intent);
-                }else if(i==1) {
+                } else if (i == 1) {
                     Intent intent = new Intent(getActivity(), EceSemList.class);
                     startActivity(intent);
-                }else if(i==2) {
+                } else if (i == 2) {
                     Intent intent = new Intent(getActivity(), EeeSemList.class);
                     startActivity(intent);
-                }else if(i==3) {
+                } else if (i == 3) {
                     Intent intent = new Intent(getActivity(), MechSemList.class);
                     startActivity(intent);
-                }else if(i==4) {
+                } else if (i == 4) {
                     Intent intent = new Intent(getActivity(), CivilSemList.class);
                     startActivity(intent);
-                }else if(i==5) {
+                } else if (i == 5) {
                     Intent intent = new Intent(getActivity(), ItSemList.class);
                     startActivity(intent);
                 }
             }
         });
-                return view;
+        return view;
     }
 
 }
-
 
 
 //        btnCSE = view.findViewById(R.id.btnCse);
