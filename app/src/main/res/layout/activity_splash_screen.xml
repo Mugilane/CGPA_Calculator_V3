@@ -63,6 +63,7 @@
             android:gravity="center"
             >
             <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/techcosLogo"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/techcos"

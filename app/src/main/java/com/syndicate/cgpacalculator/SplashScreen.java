@@ -12,8 +12,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SplashScreen extends AppCompatActivity {
-    Animation top,bottom;
-    ImageView image;
+    Animation top,bottom,fade;
+    ImageView image,logo;
     TextView t1,t2,t3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +23,16 @@ public class SplashScreen extends AppCompatActivity {
 
         top= AnimationUtils.loadAnimation(this,R.anim.top);
         bottom= AnimationUtils.loadAnimation(this,R.anim.bottom);
+        fade = AnimationUtils.loadAnimation(this,R.anim.fade);
 
         image=findViewById(R.id.image);
+        logo=findViewById(R.id.techcosLogo);
         t1=findViewById(R.id.t1);
         t2=findViewById(R.id.t2);
         t3=findViewById(R.id.t3);
 
         image.setAnimation(top);
+        logo.setAnimation(fade);
         t1.setAnimation(bottom);
         t2.setAnimation(bottom);
         t3.setAnimation(bottom);
