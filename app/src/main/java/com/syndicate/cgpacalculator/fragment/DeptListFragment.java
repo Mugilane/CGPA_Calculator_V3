@@ -27,7 +27,7 @@ import com.syndicate.cgpacalculator.mech.MechSemList;
  * A simple {@link Fragment} subclass.
  */
 public class DeptListFragment extends Fragment {
-    Button btnCSE, btnIT, btnECE, btnEEE, btnMech, btnCivil;
+    Button btnCSE, btnIT, btnECE, btnEEE, btnMech, btnCivil,btnMCA;
     GridView gridView;
 
     public DeptListFragment() {
@@ -65,6 +65,9 @@ public class DeptListFragment extends Fragment {
                     startActivity(intent);
                 } else if (i == 5) {
                     Intent intent = new Intent(getActivity(), ItSemList.class);
+                    startActivity(intent);
+                } else if (i == 6) {
+                    Intent intent = new Intent(getActivity(), MechSemList.class);
                     startActivity(intent);
                 }
             }
