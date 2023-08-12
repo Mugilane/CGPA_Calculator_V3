@@ -78,7 +78,14 @@
                         android:inputType="number"
                         android:textColor="#090909"
                         android:textSize="@dimen/_10sdp" />
-
+                    <ImageView
+                        android:id="@+id/copy1"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_content_copy_black_24dp"
+                        />
                     <ImageView
                         android:id="@+id/del1"
                         android:layout_width="@dimen/_20sdp"
@@ -118,6 +125,14 @@
                         android:inputType="number"
                         android:textColor="#090909"
                         android:textSize="@dimen/_10sdp" />
+                    <ImageView
+                        android:id="@+id/copy2"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_content_copy_black_24dp"
+                        />
 
                     <ImageView
                         android:id="@+id/del2"
@@ -167,6 +182,14 @@
                         android:textColor="#090909"
                         />
                     <ImageView
+                        android:id="@+id/copy3"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_content_copy_black_24dp"
+                        />
+                    <ImageView
                         android:id="@+id/del3"
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
@@ -204,6 +227,14 @@
                         android:fontFamily="@font/spartan_regular"
                         android:textSize="@dimen/_10sdp"
                         android:textColor="#090909"
+                        />
+                    <ImageView
+                        android:id="@+id/copy4"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_content_copy_black_24dp"
                         />
                     <ImageView
                         android:id="@+id/del4"
@@ -245,6 +276,14 @@
                         android:textColor="#090909"
                         />
                     <ImageView
+                        android:id="@+id/copy5"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_content_copy_black_24dp"
+                        />
+                    <ImageView
                         android:id="@+id/del5"
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
@@ -283,6 +322,14 @@
                         android:digits="01234567890."
                         android:textColor="#090909"
                         android:textSize="@dimen/_10sdp" />
+                    <ImageView
+                        android:id="@+id/copy6"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_content_copy_black_24dp"
+                        />
 
                     <ImageView
                         android:id="@+id/del6"
@@ -324,6 +371,14 @@
                         android:textColor="#090909"
                         />
                     <ImageView
+                        android:id="@+id/copy7"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_content_copy_black_24dp"
+                        />
+                    <ImageView
                         android:id="@+id/del7"
                         android:layout_width="@dimen/_20sdp"
                         android:layout_height="@dimen/_20sdp"
@@ -361,6 +416,14 @@
                         android:fontFamily="@font/spartan_regular"
                         android:textSize="@dimen/_10sdp"
                         android:textColor="#090909"
+                        />
+                    <ImageView
+                        android:id="@+id/copy8"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:src="@drawable/ic_content_copy_black_24dp"
                         />
                     <ImageView
                         android:id="@+id/del8"
@@ -531,6 +594,7 @@
                 android:padding="@dimen/_10sdp"
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
                 android:textColor="#fff"
                 android:textSize="@dimen/_14sdp"
                 android:layout_marginTop="@dimen/_5sdp"

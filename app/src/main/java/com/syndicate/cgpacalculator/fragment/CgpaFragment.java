@@ -35,7 +35,7 @@ import java.util.Objects;
  */
 public class CgpaFragment extends Fragment {
     Button submit, clear,addToProfile;
-    ImageView del1,del2,del3,del4,del5,del6,del7,del8, copy, copyPerc,delCgpa,delPercent,wr1,tick2,reload;
+    ImageView del1,del2,del3,del4,del5,del6,del7,del8, copy, copyPerc,delCgpa,delPercent,wr1,tick2,reload,copy1,copy2,copy3,copy4,copy5,copy6,copy7,copy8;
     TextView result, percent,resultText,resultText1,s1;
     EditText t1, t2, t3, t4, t5, t6, t7, t8;
     float perc;
@@ -79,6 +79,15 @@ public class CgpaFragment extends Fragment {
         del7 = view.findViewById(R.id.del7);
         del8 = view.findViewById(R.id.del8);
 
+        copy1 = view.findViewById(R.id.copy1);
+        copy2 = view.findViewById(R.id.copy2);
+        copy3 = view.findViewById(R.id.copy3);
+        copy4 = view.findViewById(R.id.copy4);
+        copy5 = view.findViewById(R.id.copy5);
+        copy6 = view.findViewById(R.id.copy6);
+        copy7 = view.findViewById(R.id.copy7);
+        copy8 = view.findViewById(R.id.copy8);
+
 //        wr1 = view.findViewById(R.id.wr1);
 //
 //        s1= view.findViewById(R.id.s1);
@@ -103,34 +112,42 @@ public class CgpaFragment extends Fragment {
         if (!t1.getText().toString().equals(""))
         {
             del1.setVisibility(View.VISIBLE);
+            copy1.setVisibility(View.VISIBLE);
         }
         if (!t2.getText().toString().equals(""))
         {
             del2.setVisibility(View.VISIBLE);
+            copy2.setVisibility(View.VISIBLE);
         }
         if (!t3.getText().toString().equals(""))
         {
             del3.setVisibility(View.VISIBLE);
+            copy3.setVisibility(View.VISIBLE);
         }
         if (!t4.getText().toString().equals(""))
         {
             del4.setVisibility(View.VISIBLE);
+            copy4.setVisibility(View.VISIBLE);
         }
         if (!t5.getText().toString().equals(""))
         {
             del5.setVisibility(View.VISIBLE);
+            copy5.setVisibility(View.VISIBLE);
         }
         if (!t6.getText().toString().equals(""))
         {
             del6.setVisibility(View.VISIBLE);
+            copy6.setVisibility(View.VISIBLE);
         }
         if (!t7.getText().toString().equals(""))
         {
             del7.setVisibility(View.VISIBLE);
+            copy7.setVisibility(View.VISIBLE);
         }
         if (!t8.getText().toString().equals(""))
         {
             del8.setVisibility(View.VISIBLE);
+            copy8.setVisibility(View.VISIBLE);
         }
 
         if (!result.getText().toString().equals(""))
@@ -189,34 +206,42 @@ public class CgpaFragment extends Fragment {
                 if (!t1.getText().toString().equals(""))
                 {
                     del1.setVisibility(View.VISIBLE);
+                    copy1.setVisibility(View.VISIBLE);
                 }
                 if (!t2.getText().toString().equals(""))
                 {
                     del2.setVisibility(View.VISIBLE);
+                    copy2.setVisibility(View.VISIBLE);
                 }
                 if (!t3.getText().toString().equals(""))
                 {
                     del3.setVisibility(View.VISIBLE);
+                    copy3.setVisibility(View.VISIBLE);
                 }
                 if (!t4.getText().toString().equals(""))
                 {
                     del4.setVisibility(View.VISIBLE);
+                    copy4.setVisibility(View.VISIBLE);
                 }
                 if (!t5.getText().toString().equals(""))
                 {
                     del5.setVisibility(View.VISIBLE);
+                    copy5.setVisibility(View.VISIBLE);
                 }
                 if (!t6.getText().toString().equals(""))
                 {
                     del6.setVisibility(View.VISIBLE);
+                    copy6.setVisibility(View.VISIBLE);
                 }
                 if (!t7.getText().toString().equals(""))
                 {
                     del7.setVisibility(View.VISIBLE);
+                    copy7.setVisibility(View.VISIBLE);
                 }
                 if (!t8.getText().toString().equals(""))
                 {
                     del8.setVisibility(View.VISIBLE);
+                    copy8.setVisibility(View.VISIBLE);
                 }
         }});
 
@@ -247,34 +272,42 @@ public class CgpaFragment extends Fragment {
                     if (!t1.getText().toString().equals(""))
                     {
                         del1.setVisibility(View.VISIBLE);
+                        copy1.setVisibility(View.VISIBLE);
                     }
                     if (!t2.getText().toString().equals(""))
                     {
                         del2.setVisibility(View.VISIBLE);
+                        copy2.setVisibility(View.VISIBLE);
                     }
                     if (!t3.getText().toString().equals(""))
                     {
                         del3.setVisibility(View.VISIBLE);
+                        copy3.setVisibility(View.VISIBLE);
                     }
                     if (!t4.getText().toString().equals(""))
                     {
                         del4.setVisibility(View.VISIBLE);
+                        copy4.setVisibility(View.VISIBLE);
                     }
                     if (!t5.getText().toString().equals(""))
                     {
                         del5.setVisibility(View.VISIBLE);
+                        copy5.setVisibility(View.VISIBLE);
                     }
                     if (!t6.getText().toString().equals(""))
                     {
                         del6.setVisibility(View.VISIBLE);
+                        copy6.setVisibility(View.VISIBLE);
                     }
                     if (!t7.getText().toString().equals(""))
                     {
                         del7.setVisibility(View.VISIBLE);
+                        copy7.setVisibility(View.VISIBLE);
                     }
                     if (!t8.getText().toString().equals(""))
                     {
                         del8.setVisibility(View.VISIBLE);
+                        copy8.setVisibility(View.VISIBLE);
                     }
 
                     if (!result.getText().toString().equals(""))
@@ -322,6 +355,14 @@ public class CgpaFragment extends Fragment {
                 del6.setVisibility(View.GONE);
                 del7.setVisibility(View.GONE);
                 del8.setVisibility(View.GONE);
+                copy1.setVisibility(View.GONE);
+                copy2.setVisibility(View.GONE);
+                copy3.setVisibility(View.GONE);
+                copy4.setVisibility(View.GONE);
+                copy5.setVisibility(View.GONE);
+                copy6.setVisibility(View.GONE);
+                copy7.setVisibility(View.GONE);
+                copy8.setVisibility(View.GONE);
                 delCgpa.setVisibility(View.GONE);
                 delPercent.setVisibility(View.GONE);
             }
@@ -344,6 +385,79 @@ public class CgpaFragment extends Fragment {
                 clipboardManager.setPrimaryClip(clipData);
                 Toast.makeText(getActivity(), "Percentage Of Marks Copied", Toast.LENGTH_SHORT).show();
 
+            }
+        });
+
+        copy1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboardManager = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("text", t1.getText().toString());
+                clipboardManager.setPrimaryClip(clipData);
+                Toast.makeText(getActivity(), "Sem 1 Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
+        copy2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboardManager = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("text", t2.getText().toString());
+                clipboardManager.setPrimaryClip(clipData);
+                Toast.makeText(getActivity(), "Sem 2 Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
+        copy3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboardManager = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("text", t3.getText().toString());
+                clipboardManager.setPrimaryClip(clipData);
+                Toast.makeText(getActivity(), "Sem 3 Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
+        copy4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboardManager = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("text", t4.getText().toString());
+                clipboardManager.setPrimaryClip(clipData);
+                Toast.makeText(getActivity(), "Sem 4 Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
+        copy5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboardManager = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("text", t5.getText().toString());
+                clipboardManager.setPrimaryClip(clipData);
+                Toast.makeText(getActivity(), "Sem 5 Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
+        copy6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboardManager = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("text", t6.getText().toString());
+                clipboardManager.setPrimaryClip(clipData);
+                Toast.makeText(getActivity(), "Sem 6 Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
+        copy7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboardManager = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("text", t7.getText().toString());
+                clipboardManager.setPrimaryClip(clipData);
+                Toast.makeText(getActivity(), "Sem 7 Copied", Toast.LENGTH_SHORT).show();
+            }
+        });
+        copy8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboardManager = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clipData = ClipData.newPlainText("text", t8.getText().toString());
+                clipboardManager.setPrimaryClip(clipData);
+                Toast.makeText(getActivity(), "Sem 8 Copied", Toast.LENGTH_SHORT).show();
             }
         });
 

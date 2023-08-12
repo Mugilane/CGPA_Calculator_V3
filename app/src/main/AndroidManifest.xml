@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -17,7 +17,7 @@
         android:theme="@style/Theme.CGPACalculator"
         tools:targetApi="33">
         <activity
-            android:name="mca.McaSem1list"
+            android:name=".mca.McaSem1list"
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
