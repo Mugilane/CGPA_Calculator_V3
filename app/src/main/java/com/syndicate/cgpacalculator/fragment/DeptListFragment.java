@@ -22,12 +22,14 @@ import com.syndicate.cgpacalculator.eee.EeeSemList;
 import com.syndicate.cgpacalculator.it.ItSemList;
 import com.syndicate.cgpacalculator.mech.MechSemList;
 
+import mca.McaSem1list;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class DeptListFragment extends Fragment {
-    Button btnCSE, btnIT, btnECE, btnEEE, btnMech, btnCivil,btnMCA;
+    Button btnCSE, btnIT, btnECE, btnEEE, btnMech, btnCivil, btnMCA;
     GridView gridView;
 
     public DeptListFragment() {
@@ -67,7 +69,7 @@ public class DeptListFragment extends Fragment {
                     Intent intent = new Intent(getActivity(), ItSemList.class);
                     startActivity(intent);
                 } else if (i == 6) {
-                    Intent intent = new Intent(getActivity(), MechSemList.class);
+                    Intent intent = new Intent(getActivity(), McaSem1list.class);
                     startActivity(intent);
                 }
             }
