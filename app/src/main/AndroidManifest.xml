@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -17,9 +16,167 @@
         android:theme="@style/Theme.CGPACalculator"
         tools:targetApi="33">
         <activity
+            android:name=".bscComp.BsCompSemList"
+            android:exported="false" />
+        <activity
+            android:name=".BsCompSemList"
+            android:exported="false" />
+        <activity
+            android:name=".bscComp.BsCompSem6"
+            android:exported="false" />
+        <activity
+            android:name=".bscComp.BsCompSem5"
+            android:exported="false" />
+        <activity
+            android:name=".bscComp.BsCompSem4"
+            android:exported="false" />
+        <activity
+            android:name=".bscComp.BsCompSem3"
+            android:exported="false" />
+        <activity
+            android:name=".bscComp.BsCompSem2"
+            android:exported="false" />
+        <activity
+            android:name=".BscompSem2"
+            android:exported="false" />
+        <activity
+            android:name=".bscComp.BsCompSem1"
+            android:exported="false" />
+        <activity
+            android:name=".ai23.Ai23Sem2List"
+            android:exported="false" />
+        <activity
+            android:name=".ai23.Ai23Sem1List"
+            android:exported="false" />
+        <activity
+            android:name=".foodtech.FoodTechSemList"
+            android:exported="false" />
+        <activity
+            android:name=".eie.EieSemList"
+            android:exported="false" />
+        <activity
+            android:name=".chemical.ChemicalSemList"
+            android:exported="false" />
+        <activity
+            android:name=".biomed.BioMedSemList"
+            android:exported="false" />
+        <activity
+            android:name=".ai23.Ai23SemList"
+            android:exported="false" />
+        <activity
+            android:name=".ai.AiSemList"
+            android:exported="false" />
+        <activity
+            android:name=".ai23.Ai23Sem8List"
+            android:exported="false" />
+        <activity
+            android:name=".ai23.Ai23Sem7List"
+            android:exported="false" />
+        <activity
+            android:name=".ai23.Ai23Sem6List"
+            android:exported="false" />
+        <activity
+            android:name=".ai23.Ai23Sem5List"
+            android:exported="false" />
+        <activity
+            android:name=".ai23.Ai23Sem3List"
+            android:exported="false" />
+        <activity
+            android:name=".ai23.Ai23Sem4List"
+            android:exported="false" />
+        <activity
+            android:name=".eie.EieSem8List"
+            android:exported="false" />
+        <activity
+            android:name=".eie.EieSem7List"
+            android:exported="false" />
+        <activity
+            android:name=".eie.EieSem6List"
+            android:exported="false" />
+        <activity
+            android:name=".eie.EieSem5List"
+            android:exported="false" />
+        <activity
+            android:name=".eie.EieSem4List"
+            android:exported="false" />
+        <activity
+            android:name=".eie.EieSem3List"
+            android:exported="false" />
+        <activity
+            android:name=".ai.AiSem8List"
+            android:exported="false" />
+        <activity
+            android:name=".ai.AiSem7List"
+            android:exported="false" />
+        <activity
+            android:name=".ai.AiSem6List"
+            android:exported="false" />
+        <activity
+            android:name=".ai.AiSem5List"
+            android:exported="false" />
+        <activity
+            android:name=".ai.AiSem4List"
+            android:exported="false" />
+        <activity
+            android:name=".ai.AiSem3List"
+            android:exported="false" />
+        <activity
+            android:name=".chemical.ChemicalSem8List"
+            android:exported="false" />
+        <activity
+            android:name=".chemical.ChemicalSem7List"
+            android:exported="false" />
+        <activity
+            android:name=".chemical.ChemicalSem6List"
+            android:exported="false" />
+        <activity
+            android:name=".chemical.ChemicalSem5List"
+            android:exported="false" />
+        <activity
+            android:name=".chemical.ChemicalSem4List"
+            android:exported="false" />
+        <activity
+            android:name=".chemical.ChemicalSem3List"
+            android:exported="false" />
+        <activity
+            android:name=".foodtech.FoodTechSem8List"
+            android:exported="false" />
+        <activity
+            android:name=".foodtech.FoodTechSem7List"
+            android:exported="false" />
+        <activity
+            android:name=".foodtech.FoodTechSem6List"
+            android:exported="false" />
+        <activity
+            android:name=".foodtech.FoodTechSem5List"
+            android:exported="false" />
+        <activity
+            android:name=".foodtech.FoodTechSem4List"
+            android:exported="false" />
+        <activity
+            android:name=".foodtech.FoodTechSem3List"
+            android:exported="false" />
+        <activity
+            android:name=".biomed.BioMedSem8List"
+            android:exported="false" />
+        <activity
+            android:name=".biomed.BioMedSem7List"
+            android:exported="false" />
+        <activity
+            android:name=".biomed.BioMedSem6List"
+            android:exported="false" />
+        <activity
+            android:name=".biomed.BioMedSem5List"
+            android:exported="false" />
+        <activity
+            android:name=".biomed.BioMedSem4List"
+            android:exported="false" />
+        <activity
+            android:name=".biomed.BioMedSem3List"
+            android:exported="false" />
+        <activity
             android:name=".mca.McaSem1list"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">

@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -12,13 +14,21 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.syndicate.cgpacalculator.adapters.ImageAdapter;
 import com.syndicate.cgpacalculator.R;
+import com.syndicate.cgpacalculator.ai.AiSemList;
+import com.syndicate.cgpacalculator.ai23.Ai23SemList;
+import com.syndicate.cgpacalculator.biomed.BioMedSemList;
+import com.syndicate.cgpacalculator.chemical.ChemicalSemList;
 import com.syndicate.cgpacalculator.civil.CivilSemList;
 import com.syndicate.cgpacalculator.cse.CseSemList;
 import com.syndicate.cgpacalculator.ece.EceSemList;
 import com.syndicate.cgpacalculator.eee.EeeSemList;
+import com.syndicate.cgpacalculator.eie.EieSemList;
+import com.syndicate.cgpacalculator.foodtech.FoodTechSemList;
 import com.syndicate.cgpacalculator.it.ItSemList;
 import com.syndicate.cgpacalculator.mech.MechSemList;
 
@@ -29,7 +39,8 @@ import com.syndicate.cgpacalculator.mca.McaSem1list;
  * A simple {@link Fragment} subclass.
  */
 public class DeptListFragment extends Fragment {
-    Button btnCSE, btnIT, btnECE, btnEEE, btnMech, btnCivil, btnMCA;
+    AppCompatImageView BtnArts,BtnEngg,Btnback;
+    LinearLayout StudyDiv,deptDiv;
     GridView gridView;
 
     public DeptListFragment() {
@@ -43,8 +54,40 @@ public class DeptListFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_dept_list, container, false);
 
+        StudyDiv = view.findViewById(R.id.StudyDiv);
+        deptDiv = view.findViewById(R.id.deptDiv);
+        BtnArts  = view.findViewById(R.id.arts);
+        BtnEngg  = view.findViewById(R.id.engg);
+        Btnback = view.findViewById(R.id.backBtn);
         gridView = view.findViewById(R.id.gridview);
         gridView.setBackgroundColor(Color.parseColor("#FFFFFF"));
+
+        BtnEngg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                StudyDiv.setVisibility(View.GONE);
+                deptDiv.setVisibility(View.VISIBLE);
+
+            }
+        });
+        Btnback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                deptDiv.setVisibility(View.GONE);
+                StudyDiv.setVisibility(View.VISIBLE);
+
+
+            }
+        });
+
+
+        BtnArts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Under Developement", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         ImageAdapter imageAdapter = new ImageAdapter(view.getContext());
         gridView.setAdapter(imageAdapter);
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -70,6 +113,24 @@ public class DeptListFragment extends Fragment {
                     startActivity(intent);
                 } else if (i == 6) {
                     Intent intent = new Intent(getActivity(), McaSem1list.class);
+                    startActivity(intent);
+                }else if (i == 7) {
+                    Intent intent = new Intent(getActivity(), AiSemList.class);
+                    startActivity(intent);
+                } else if (i == 8) {
+                    Intent intent = new Intent(getActivity(), Ai23SemList.class);
+                    startActivity(intent);
+                } else if (i == 9) {
+                    Intent intent = new Intent(getActivity(), BioMedSemList.class);
+                    startActivity(intent);
+                } else if (i == 10) {
+                    Intent intent = new Intent(getActivity(), ChemicalSemList.class);
+                    startActivity(intent);
+                } else if (i == 11) {
+                    Intent intent = new Intent(getActivity(), EieSemList.class);
+                    startActivity(intent);
+                } else if (i == 12) {
+                    Intent intent = new Intent(getActivity(), FoodTechSemList.class);
                     startActivity(intent);
                 }
             }

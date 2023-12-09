@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ai23.Ai23SemList">
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            />
+        <TextView
+            android:id="@+id/textView5"
+            android:textSize="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_9sdp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="AI 2022-23"
+            />
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="@dimen/_100sdp"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/_10sdp"
+        android:horizontalSpacing="@dimen/_10sdp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        >
+    </GridView>
+</LinearLayout>
